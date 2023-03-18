@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elshof Metaaldak &middot; zinkwerk &middot; eikstaete te hoogeveen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elshof Metaaldak specialist in metalen dak- en gevelbekleding, zinkwerk voorbeeld projecten">
+    <meta name="author" content="">
+
+<script type="text/javascript"> 
+
+var tussentijd= 2500 // Stel hier de wissel tijd in.
+var teller=0
+
+var plaatje=new Array() 
+plaatje[0] = new Image();plaatje[0].src = "assets/img/073040/eikstaete1.jpg"
+plaatje[1] = new Image();plaatje[1].src = "assets/img/073040/eikstaete2.jpg"
+plaatje[2] = new Image();plaatje[2].src = "assets/img/073040/eikstaete3.jpg"
+plaatje[3] = new Image();plaatje[3].src = "assets/img/073040/eikstaete4.jpg"
+plaatje[4] = new Image();plaatje[4].src = "assets/img/073040/eikstaete5.jpg"
+plaatje[5] = new Image();plaatje[5].src = "assets/img/073040/eikstaete6.jpg"
+plaatje[6] = new Image();plaatje[6].src = "assets/img/073040/eikstaete7.jpg"
+plaatje[7] = new Image();plaatje[7].src = "assets/img/073040/eikstaete8.jpg"
+plaatje[8] = new Image();plaatje[8].src = "assets/img/073040/eikstaete9.jpg"
+plaatje[9] = new Image();plaatje[9].src = "assets/img/073040/eikstaete10.jpg"
+plaatje[10] = new Image();plaatje[10].src = "assets/img/073040/eikstaete11.jpg"
+function Wissel(){
+++teller;if(teller==plaatje.length){teller=0} 
+document.getElementById('venster').src=plaatje[teller].src 
+setTimeout("Wissel()",tussentijd)} 
+
+</script>
+
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 300;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 16px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 15px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+	.marketing .span2 {
+	  z-index: 500;
+      margin-top: 90px;
+      text-align: left;
+      }
+   .marketing .span4 {
+      top: 500px;
+	  margin-top: 90px;
+      text-align: left;
+      }
+	.marketing .span6 {
+	  z-index: 500;
+      margin-top: 90px;
+      text-align: left;
+      } 
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+      }
+
+div.img
+  {
+  margin:2px;
+  border:0px solid #0000ff;
+  height:auto;
+  width:auto;
+  float:left;
+  text-align:left;
+  }
+div.img img
+  {
+  display:inline;
+  margin:3px;
+  border:1px solid #ffffff;
+  }
+div.img a:hover img
+  {
+  border:1px solid #0000ff;
+  }
+div.desc
+  {
+  text-align:center;
+  font-weight:normal;
+  width:80px;
+  margin:2px;
+  }
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 400px;
+      }
+      .carousel img {
+        width: auto;
+        height: 400px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body onload="Wissel()">
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html"><img src="assets/img/examples/logo%20elshof.png" alt="logo Elshof"></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                      <li class="dropdown">
+                       <a href="elshof%20metaaldak.html" class="dropdown-toggle" data-toggle="dropdown">Elshof Metaaldak<b class="caret"></b></a>
+                  	<ul class="dropdown-menu">
+                    	<li><a href="elshof%20metaaldak.html#prefab">pre-production</a></li>
+                    	<li><a href="elshof%20metaaldak.html#app">application</a></li>
+                    	<li><a href="elshof%20metaaldak.html#design">design</a></li>
+                    	<li><a href="elshof%20metaaldak.html#skin">skin</a></li>
+                    	<li><a href="elshof%20metaaldak.html#cons">constructions</a></li>
+                    	<li><a href="elshof%20metaaldak.html#under">under skin</a></li>
+                    	<li><a href="elshof%20metaaldak.html#rest">restauration</a></li>
+                    	<li><a href="elshof%20metaaldak.html#resp">responsibility</a></li>
+                    	</ul>
+                      </li>
+		      <li><a href="zinkwerk.html">Zink</a></li>
+                      <li><a href="koperwerk.html">Koper</a></li>
+                      <li><a href="loodwerk.html">Lood</a></li>
+                      <li><a href="rvs.html">RVS</a></li>
+                      <li><a href="aluminium.html">Aluminium</a></li>
+                 <li><a href="titanium.html">Titanium</a></li>
+                  <li><a href="staal.html">Staal</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+ <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+         <div class="span2">
+	<h4> projectgegevens</h4>
+		<p>Eikstaete<br>Van Limburg Stirumstraat 250<br>Hoogeveen</p>
+		<p><b>Materiaal:</b><br>Rheinzink Nature Grey Pro<br>
+        <b>Systeem:</b><br>felsbekleding</p>
+		<p><b>Architect</b><br>Axes architecten</p>
+	<hr>
+	<hr>
+	<p>Voor meer en/of technische informatie kunt u altijd contact met <a href="mailto:elshof@elshof.nl">
+  ons</a> opnemen</p>
+      </div><!-- /.span2 -->
+	  
+         <div class="span6">
+		<h4>ZINKWERK - EIKSTAETE TE HOOGEVEEN</h4>
+		<img src="assets/img/073040/eikstaete1.jpg" id="venster" alt ="eikstaete te hoogeveen, zink, felswerk">
+        </div><!-- /.span6 -->
+       
+
+  <div class="span4"> 
+          <h4>voorbeeld zinkwerk projecten</h4>
+         <div class="img">
+		    <a href="twello.html"><img src="assets/img/143030/twellok.jpg" alt="woonhuis te twello"></a>
+			<a href="roelofarendsveen.html"><img src="assets/img/133350/roelofarendsveenk.jpg" alt="woonhuis te roelofarendsveen"></a>
+		    <a href="schagen.html"><img src="assets/img/133290/schagenk.jpg" alt="de hoed van igh te schagen"></a>
+		    <a href="tremour.html"><img src="assets/img/133210/tremourk.jpg" alt="woonhuis te apeldoorn"></a>
+ 		    <a href="korfwoning.html"><img src="assets/img/123180/korfwoningk.jpg" alt="korfwoning te almere"></a>
+		    <a href="fortmont.html"><img src="assets/img/123090/dehaank.jpg" alt="woonhuis te fortmont"></a>
+			<a href="valkenburg.html"><img src="assets/img/113360/valkenburgk.jpg" alt="woning te valkenburg"></a>	
+			<a href="ulumoskee.html"><img src="assets/img/113320/ulumoskeek.jpg" alt="ulu moskee te utrecht"></a>
+			<a href="tholen.html"><img src="assets/img/113050/tholenk.jpg" alt="vakantiewoningen te tholen"></a>
+            <a href="engbergen.html"><img src="assets/img/113040/engbergenk.jpg" alt="engbergen"></a>
+            <a href="beekappartementen.html"><img src="assets/img/103320/entree.jpg" alt="entree bekleding beekappartementen"></a>
+            <a href="marijenkampen.html"><img src="assets/img/103150/marijenkampen.jpg" alt="marijenkampen"></a>
+            <a href="imax.html"><img src="assets/img/093250/imaxk.jpg" alt="imax boekarest"></a>
+            <a href="dreiumme.html"><img src="assets/img/093070/dreiumme.jpg" alt="kultuurhus dreiumme"></a>
+            <a href="reggefiber.html"><img src="assets/img/083320/reggefiber.bmp" alt="reggefiber rijssen"></a>
+			<a href="kantoorvilla.html"><img src="assets/img/083060/kantoorvillak.jpg" alt="kantoorvilla apeldoorn"></a>
+            <a href="bunschoten.html"><img src="assets/img/073090/bunschotenk.jpg" alt="centrumplan oost"></a>
+            <a href="scholingsboulevard.html"><img src="assets/img/073060/scholingsboulevardk.jpg" alt="gevelbekleding scholingsboulevard"></a>
+            <a href="eikstaete.html"><img src="assets/img/073040/eikstaetek.jpg" alt="gevelbekleding eiksteate hoogeveen"></a>
+			<a href="buitenhuis.html"><img src="assets/img/073020/buitenhuisk.jpg" alt="toogdak woonhuis dedemsvaart"></a>
+			<a href="zuiderzeewijk.html"><img src="assets/img/063170/zuiderzeewijkk.jpg" alt="gevelbekleding zuiderzeewijk"></a>
+            <a href="sluiswachtershuis.html"><img src="assets/img/053480/Sluiswachtershuis%20Doesburg%20GLDk.jpg" alt="felsbekleding sluiswachtershuis doesburg"></a>
+            <a href="theetent.html"><img src="assets/img/053200/theetentk.jpg" alt="roeven dakbedekking theetent koninklijk park"></a>
+            <a href="jeanne%20d'arcdreef%20utrecht.html"><img src="assets/img/043490/jeanne%20d'arcdreefk.jpg" alt="jeanne d'arcdreef utrecht"></a>
+            <a href="badtent.html"><img src="assets/img/043380/badtentk.jpg" alt="roeven dakbedekking badtent koninklijk park"></a>
+            <a href="holten.html"><img src="assets/img/043340/in%20den%20swarte%20ruijterk.jpg" alt="losange gevelbekleding in den swarte ruijter"></a>
+            <a href="kulturhus.html"><img src="assets/img/kulturhus/kulturhusk.jpg" alt="kulturhus"></a>
+			<a href="badhuisweg.html"><img src="assets/img/043210/badhuiswegk.jpg" alt="badhuisweg zutphen"></a>
+            <a href="kudelstaart.html"><img src="assets/img/043110/kudelstaartk.jpg" alt="kudelstaart"></a>
+            <a href="weiburg.html"><img src="assets/img/033280/weiburgk.jpg" alt="weiburg"></a>
+            <a href="regterschot.html"><img src="assets/img/033150/regterschotk.jpg" alt="woonhuis regterschot"></a>
+            <a href="mcdonalds.html"><img src="assets/img/033130/mcdonaldsk.jpg" alt="gevelbekleding mc donalds hengelo"></a>
+			<a href="elspeet.html"><img src="assets/img/023270/elspeetk.jpg" alt="gebogen felsbanen elspeet"></a>
+			<a href="eijkenstein.html"><img src="assets/img/023140/eijkensteink.jpg" alt="eijkenstein"></a>
+			<a href="kiosk.html"><img src="assets/img/023090/kioskk.jpg" alt="losange bekleding kiosk"></a>
+			<a href="keuringsdienst.html"><img src="assets/img/993170/keuringsdienstk.jpg" alt="gevelbekleding fels keuringsdienst van waren"></a>
+			<a href="abnamro.html"><img src="assets/img/983140/abnamrok.jpg" alt="gevelbekleding abnamro"></a>
+ 	    </div>
+          </div><!-- /.span4 -->
+
+      </div><!-- /.row -->
+
+   
+  <!-- FOOTER -->
+      <footer>
+	<hr>
+        <p class="pull-right"><a href="#">Back to top</a></p><p>
+  <a target="_blank" href="http://www.zinkmeesters.nl" ><img src="assets/img/logo/zinkmeesters.jpg" alt="zinkmeersters"></a>
+  <a target="blank" href="http://www.technieknederland.nl"><img src="assets/img/logo/technieknederland.png" alt="techniek nederland"></a>
+  <a target="_blank" href="http://www.kme.com"><img src="assets/img/logo/tecu-partner.jpg" alt="tecu partner"></a>
+  <img src="assets/img/logo/komo.gif" alt="komo">
+<a target="_blank" href="http://www.sterktechniekonderwijs.nl/regio/deventertwello"><img src="assets/img/logo/sto.png" alt="sterk techniek onderwijs"></a>
+ 	</p>
+        <address>De Meente 30, 8121 EV OLST. Tel:0570-561273 <a href="mailto:elshof@elshof.nl">E-mail:elshof@elshof.nl</a></address>
+      </footer>
+     
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+   </body>
+</html>

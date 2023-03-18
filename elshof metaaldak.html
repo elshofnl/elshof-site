@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elshof Metaaldak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elshof Metaaldak specialist in metalen dak- en gevelbekleding. Pre-production, application, design, skin, constructions, under skin, restauration, responsibility">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 300;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 16px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 15px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: left;
+      }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 10px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 10px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html"><img src="assets/img/examples/logo%20elshof.png" alt="logo Elshof"></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+ 		 <li class="dropdown active">
+                  <a href="elshof%20metaaldak.html" class="dropdown-toggle" data-toggle="dropdown">Elshof Metaaldak</a>
+                  <ul class="dropdown-menu">
+ 		    <li><a href="elshof%20metaaldak.html#prefab">pre-production</a></li>
+                    <li><a href="elshof%20metaaldak.html#app">application</a></li>
+                    <li><a href="elshof%20metaaldak.html#design">design</a></li>
+                    <li><a href="elshof%20metaaldak.html#skin">skin</a></li>
+                    <li><a href="elshof%20metaaldak.html#cons">constructions</a></li>
+                    <li><a href="elshof%20metaaldak.html#under">under skin</a></li>
+                    <li><a href="elshof%20metaaldak.html#rest">restauration</a></li>
+                    <li><a href="elshof%20metaaldak.html#resp">responsibility</a></li>
+                  </ul>
+                </li>
+		<li><a href="zinkwerk.html">Zink</a></li>
+                <li><a href="koperwerk.html">Koper</a></li>
+                <li><a href="loodwerk.html">Lood</a></li>
+                <li><a href="rvs.html">RVS</a></li>
+                 <li><a href="aluminium.html">Aluminium</a></li>
+                 <li><a href="titanium.html">Titanium</a></li>
+                  <li><a href="staal.html">Staal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+ 	  </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/examples/slide-02.jpg" alt="dak- en gevel reggefiber te rijssen">
+          <div class="container">
+	 <div class="carousel-caption">
+              <h1>Elshof Metaakdak bv</h1>
+              <p class="lead">Specialist in metalen dak- en gevelbekledingen uitgevoerd in zink, koper, lood, RVS, aluminium, titanium, staal.</p>
+              <a class="btn btn-large btn-primary" href="elshof%20metaaldak.html">Lees meer</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+         <img src="assets/img/examples/slide-25.jpg" alt="prefab">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Prefab</h1>
+              <p class="lead">eigen productie, specifiek voor uw project</p>
+              <a class="btn btn-large btn-primary" href="#prefab">Lees meer</a>
+            </div>
+           </div>
+        </div>
+	<div class="item">
+         <img src="assets/img/examples/slide-29.jpg" alt="application">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Application</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#app">Lees meer</a>
+            </div>
+           </div>
+        </div>
+  	<div class="item">
+         <img src="assets/img/examples/slide-26.jpg" alt="skin">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>skin</h1>
+              <p class="lead">een metalen huid</p>
+              <a class="btn btn-large btn-primary" href="#skin">Lees meer</a>
+            </div>
+           </div>
+        </div>
+	<div class="item">
+         <img src="assets/img/examples/slide-31.jpg" alt="design">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>design</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#design">Lees meer</a>
+            </div>
+           </div>
+        </div>
+	<div class="item">
+         <img src="assets/img/examples/slide-27.jpg" alt="construction">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>construction</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#cons">Lees meer</a>
+            </div>
+           </div>
+        </div>
+	<div class="item">
+         <img src="assets/img/examples/slide-32.jpg" alt="under skin">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>under skin</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#under">Lees meer</a>
+            </div>
+           </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/examples/slide-28.jpg" alt="restauration">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Restauration</h1>
+              <p class="lead"></p>
+              <a class="btn btn-large btn-primary" href="#rest">Lees meer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+ 
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- START THE FEATURETTES -->
+
+  
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="assets/img/app/wp.jpg" alt="werkplaats">
+        <a id="prefab"><h2 class="featurette-heading">Preproduction.<span class="muted">Prefab.</span></h2></a>
+        <p class="lead">Geraffineerde ambachtelijke gereedschappen, apparaten en machines, maar natuurlijk ook computersgestuurde bewerkingsappatuur, vertalen de benodigde plaatvormen in tastbare plaatproducties en slimme zetwerken.<br>Elshof Metaaldak beschikt over een zeer effinciente prefabicage- en productieafdeling. Een samenspel tussen vakmensen en techniek, ICT, moderne machines, productie-ervaring en logistiek inzicht. Hier wordt al een groot deel van het eindresultaat bepaald. Binnen het vakgebied een van de meest uitgebreide en geoutilleerde werkplaatsen van Nederland. Niet in de laatste plaats kunnen hier producties worden gedraaid voor een scherpe prijs.</p>
+      	<p class="pull-right"><a href="#">Back to top</a></p>
+      </div>	
+    
+     <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/app/app1.jpg" alt="application">
+        <a id="app"> <h2 class="featurette-heading">Application.<span class="muted"></span></h2></a>
+        <p class="lead">De inzet van vakpersoneel is vaak een onderschat facet. Elshof Metaaldak kent haar vakmensen en hun specifieke vaardigheden. Dit vakmanschap - het oude vakgilde - wordt door ons gekoesterd. Jonge mensen worden voor dit vakmanschap intern opgeleid. <br>Daarom bestaat een montageteam van Elshof altijd een een verantwoorde selectie van metaaldakspecialisten, die naast het specialsme ook nog eens de juiste motivatie bezitten voor het vak. Een unieke samenstelling.</p>
+        <p class="pull-right"><a href="#">Back to top</a></p> 
+      </div>
+ 
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+	<img class="featurette-image pull-left" src="assets/img/app/design1.jpg" alt="design i-max">
+        <img class="featurette-image pull-right" src="assets/img/app/design.jpg" alt="design duurzaamheidsfabriek">
+        <a id="design"><h2 class="featurette-heading">Design.<span class="muted"></span></h2></a>
+        <p class="lead">Zolang er design bestaat is het met architectuur verweven geweest. Het karakter van elk gebouw wordt bepaald door de ontwerper en zijn opvatting over designoplossingen. Metalen daken bieden architecten ongekende vormoplossingen en leiden opvallend vaak tot zeer hoogwaardige architectonische hoogstandjes. Ieder product is met aandacht en passie ontworpen door zijn architect. Zo'n werk verdient dezelfde passie en aandacht in de uitwerking en uitvoering. En maatwerk past beter dan confectie: daarom Elshof.</p>
+	<p class="pull-right"><a href="#">Back to top</a></p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/app/skin.jpg" alt="diverse metalen">
+        <a id="skin"><h2 class="featurette-heading">Skin.<span class="muted"></span></h2></a>
+        <p class="lead">De huid van een gebouw vormt formeel de scheiding tussen binnen en buiten. Met verschillende metalen - koper, zink, aluminium, RVS, titanium, staal - geeft men een gebouw als het ware een huid die ongewenste invloeden buiten houdt, waardoor het binnenklimaat niet verstoordt wordt.<br> Waar nodig zal de bekleding moeten kunnen ademen en elders juist niet. Allemaal mogelijk. Een metalen huid kan dus ademen waardoor interieur en exterieur vorm- en bouwtechnisch kunnen harmonieren.</p>
+  	<p class="pull-right"><a href="#">Back to top</a></p>
+      </div>
+	
+      <hr class="featurette-divider">
+
+         <div class="featurette">
+        <img class="featurette-image pull-left" src="assets/img/app/constructions.jpg" alt="constructions">
+        <a id="cons"><h2 class="featurette-heading">Constructions.<span class="muted"></span></h2></a>
+        <p class="lead">Als de vorm is bepaald en constructies zijn bedacht, dan is de expertise van Elshof Metaaldak onontbeerlijk.<br>Kennis van het materiaal, constructies, het bouwproces en de architectonische eisen vertalen de experts van Elshof Metaaldak in pragmatische oplossingen.<br>Een samenspel van bouwkundige eisen, functies, vormen, kosten en tijd. Een samenspel om te construeren. Samen werken om samen te bouwen en een perfect eindresultaat op te leveren.</p>
+  	<p class="pull-right"><a href="#">Back to top</a></p>
+	</div>
+
+      <hr class="featurette-divider">
+     
+	 <div class="featurette">
+        <img class="featurette-image pull-right" src="assets/img/app/under.jpg" alt="onderconstructie">
+        <a id="under"><h2 class="featurette-heading">Under skin.<span class="muted"></span></h2></a>
+        <p class="lead">Gelijk aan de menselijke huid is de verwerking van gevel- en dakmetalen een doordacht geheel.<br> 
+	Warmte, kou, vocht, wind en andere invloeden bepalen duurzaamheid, de looks en de uiteindelijke kosten van de toepassing.<br>
+	Elshof Metaaldak draagt diverse mogelijkheden aan in onderconstructies. Compleet met alle mogelijkheden aan in onder-, tussen- en toplagen.
+	Een veilige en deskundige partner in het prille stadium van het bouwproces.</p>
+  	<p class="pull-right"><a href="#">Back to top</a></p>
+	</div>
+
+      <hr class="featurette-divider">
+
+      
+        <div class="featurette">
+        <img class="featurette-image pull-left" src="assets/img/app/rest.jpg" alt="restauratiewerk">
+        <a id="rest"><h2 class="featurette-heading">Restauration. <span class="muted"></span></h2></a>
+        <p class="lead">Kennis en kunde om verantwoorde restauraties uit te voeren zijn binnen Elshof Metaaldak royaal aanwezig. Klassieke technieken, werkstijlen, methodes en materialen, gecombineerd met liefde voor het vak en interesse in bouwhistorie en bouwcultuur vormen de ideale mix voor het werken binnen de restauratiewereld. Lood, koper en zink, maar ook natuurleien zijn klassieke materialen die binnen het bijna 100 jaar bestaande bedrijf beheerst worden.<br>Restauraties uitvoeren aan cultureel erfgoed, kerken, torens, kapitale buitenhuizen, industri&euml;el erfgoed, is keer op keer een uitdaging waar de vakmensen van Elshof met passie aan beginnen en met trots opleveren.</p>
+ 	<p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+
+	<hr class="featurette-divider">
+
+ 	<div class="featurette"><a id="resp">
+        <h2 class="featurette-heading">Responsibility.<span class="muted"></span></h2></a>
+        <p class="lead">Maatschappelijk verantwoord ondernemen is geen modewoord voor Elshof Metaaldak. Vanuit een groot verantwoordelijkheidsgevoel oefent Elshof Metaaldak het vak uit van dak- en gevelspecialisten. Actuele normerende regels worden  respectvol gehanteerd. Nieuwe samenwerkingsvormen worden toegejuicht. Het hoeft geen verdere uitleg dat "Cradle to cradle", "CO2 reductie" en "duurzaam bouwen" uitstekend passen binnen de werksfeer van Elshof Metaaldak.</p>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+	</diV>      
+
+	<hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+       <!-- FOOTER -->
+      <footer>
+     <hr>
+        <p class="pull-right"><a href="#">Back to top</a></p><p>
+  <a target="_blank" href="http://www.zinkmeesters.nl" ><img src="assets/img/logo/zinkmeesters.jpg" alt="zinkmeersters"></a>
+  <a target="blank" href="http://www.technieknederland.nl"><img src="assets/img/logo/technieknederland.png" alt="techniek nederland"></a>
+  <a target="_blank" href="http://www.kme.com"><img src="assets/img/logo/tecu-partner.jpg" alt="tecu partner"></a>
+  <img src="assets/img/logo/komo.gif" alt="komo">
+<a target="_blank" href="http://www.sterktechniekonderwijs.nl/regio/deventertwello"><img src="assets/img/logo/sto.png" alt="sterk techniek onderwijs"></a>
+ 	</p>
+        <address>De Meente 30, 8121 EV OLST. Tel:0570-561273 <a href="mailto:elshof@elshof.nl">E-mail:elshof@elshof.nl</a></address>
+	  </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+   </body>
+</html>
